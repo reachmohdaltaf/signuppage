@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Sign Up Form</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <form id="myform">
+        <!----------------HEADING----------------------->
+  
+        <h1>Sign Up</h1>
+  
+        <!------------LABELS INPUTS --------------------->
+  
+        <label>Username:</label>
+        <input type="text" id="username" name="funame"  placeholder="Choose your username" />
+        <span id="error1"></span>
+        <br />
+  
+        <label>Email:</label>
+        <input type="email" id="email" name="femail"  placeholder="Enter your email" />
+        <span id="error2"></span>
+        <br />
+  
+        <label>Password:</label>
+        <input type="password" id="password" name="password"  placeholder="Enter a strong password" />
+        <span id="error3"></span>
+        <br />
+  
+        <label>Confirm Password:</label>
+        <input type="password" id="confirm" name="cfpassword"  placeholder="Re-enter your password" />
+        <span id="error4"></span>
+        <br />
+  
+        <button type="submit" id="btn">Sign Up</button>
+      </form>
+    </div>
+  
+  </div>
+ 
+  <script src="./script.js"></script>
+</body>
+
+</html>
