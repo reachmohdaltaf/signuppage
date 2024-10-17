@@ -87,7 +87,7 @@ form span{
 
     form {
         padding: 20px;
-        box-shadow: none; 
+        box-shadow: 0px 0px 3px; 
     }
 
     form input {
