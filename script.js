@@ -23,9 +23,11 @@
     error4.textContent = "";
 
     let isValid = true;
+
     
 
-    const usernamePattern = /^[a-z0-9]{5,12}$/;
+    function fusername(){
+        const usernamePattern = /^[a-z0-9]{5,12}$/;
     if(username == ""){
         error1.textContent = "*Username is required";
         isValid = false;
@@ -34,31 +36,47 @@
         isValid = false;
     
     }
+    }
 
-    if(email == ""){
-        error2.textContent = "*email is required";
+    function fgmail(){
+        if(email == ""){
+            error2.textContent = "*email is required";
+            isValid = false;
+        }
+    }
+
+   
+   function fpassword(){
+    const  passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,24}$/;
+    if(password == ""){
+        error3.textContent = "*password is required";
         isValid = false;
     }
-    const  passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,24}$/;
-        if(password == ""){
-            error3.textContent = "*password is required";
-            isValid = false;
-        }
-        else if (!passwordCheck.test(password)) {
-            error3.textContent = "*Password must be 8-24 characters, include uppercase, lowercase, and a number, and no spaces";
-            isValid = false;
-        }
-    
+    else if (!passwordCheck.test(password)) {
+        error3.textContent = "*Password must be 8-24 characters, include uppercase, lowercase, and a number, and no spaces";
+        isValid = false;
+    }
+
+   }
 
 
-            if(confirm == ""){
-                error4.textContent = "*confirm your password is required";
-                isValid = false;
-            }
-            else if (password !== confirm) {
-                error4.textContent = "*Passwords do not match";
-                isValid = false;
-            }
+   function fconfirm(){
+    if(confirm == ""){
+        error4.textContent = "*confirm your password is required";
+        isValid = false;
+    }
+    else if (password !== confirm) {
+        error4.textContent = "*Passwords do not match";
+        isValid = false;
+    }
+   }
+
+
+   fusername();
+   fgmail();
+   fpassword();
+   fconfirm();
+
 
             if(isValid){
                 alert("form is submitted") 
