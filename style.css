@@ -73,7 +73,7 @@ form span{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .wrapper {
         height: auto;
         padding: 20px;
@@ -104,3 +104,4 @@ form span{
     }
 }
 }
+
