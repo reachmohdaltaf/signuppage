@@ -81,7 +81,29 @@
             if(isValid){
                 alert("form is submitted") 
             }
+
+
+
+          
         
+
+    });
+
+
+    const showpassword = document.getElementById("showpassword");
+
+    showpassword.addEventListener("change", function(){
+        const password = document.getElementById("password")
+        const confirm = document.getElementById("confirm")
+
+        if(this.checked){
+            password.type = "text";
+            confirm.type = "text";
+        }
+        else{
+            password.type = "password";
+            confirm.type = "password";
+        }
 
     });
 
