@@ -1,5 +1,5 @@
-Signup Page
-Description
+**Signup Page
+**Description
 Welcome to the Signup Page project! This is a sleek and modern web application designed to provide a user-friendly interface for new users to register easily. Built using HTML, CSS, and JavaScript, this signup page features a clean layout, responsive design, and intuitive form validation, ensuring a seamless experience across devices.
 
 Key Features:
